@@ -1,4 +1,4 @@
-// +heroku goVersion go1.12
+// +heroku goVersion go1.14
 module github.com/GoogleCloudPlatform/buildpack-samples/sample-go
 
-go 1.12
+go 1.14
