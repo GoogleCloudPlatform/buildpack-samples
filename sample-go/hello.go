@@ -16,34 +16,14 @@ package main
 
 import (
 	"fmt"
-	"html/template"
 	"log"
 	"net/http"
 	"os"
 )
 
-type Data struct {
-	Service            string
-	Revision           string
-	Project            string
-	NetworkEgressError bool
-	ProjectFound       bool
-}
-
 func main() {
-	tmpl := template.Must(template.ParseFiles("index.html"))
-
-	revision := os.Getenv("K_REVISION")
-	if revision == "" {
-		revision = "???"
-	}
-
-	data := Data{
-		Revision:           revision,
-	}
-
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		tmpl.Execute(w, data)
+		fmt.Fprint(w, "hello, world")
 	})
 
 	port := os.Getenv("PORT")
