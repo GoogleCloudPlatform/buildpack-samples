@@ -12,7 +12,7 @@ pack build sample-go
 docker run -p8080:8080 sample-go
 ```
 
-[http://localhost:8080](http://localhost:8080)
+Check it out: [http://localhost:8080](http://localhost:8080)
 
 Run on Cloud Run:
 
