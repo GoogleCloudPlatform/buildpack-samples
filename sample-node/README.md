@@ -15,7 +15,7 @@ Run Locally:
 
 Run Locally with Buildpacks & Docker:
 ```
-pack build sample-node
+pack build --builder=gcr.io/buildpacks/builder sample-node
 docker run -it -ePORT=8080 -p8080:8080 sample-node
 ```
 

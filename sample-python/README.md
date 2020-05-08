@@ -25,7 +25,7 @@ Check it out: http://127.0.0.1:5000/
 
 Run Locally with Buildpacks & Docker:
 ```
-pack build sample-python
+pack build --builder=gcr.io/buildpacks/builder sample-python
 docker run -it -ePORT=8080 -p8080:8080 sample-python
 ```
 

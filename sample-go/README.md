@@ -8,7 +8,7 @@ go build
 
 Run Locally with pack & Docker:
 ```
-pack build sample-go
+pack build --builder=gcr.io/buildpacks/builder sample-go
 docker run -p8080:8080 sample-go
 ```
 

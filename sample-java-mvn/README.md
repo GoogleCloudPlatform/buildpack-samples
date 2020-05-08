@@ -8,7 +8,7 @@ Run Locally (with Java 11 installed):
 
 Run Locally with Buildpacks & Docker:
 ```
-pack build sample-java-mvn
+pack build --builder=gcr.io/buildpacks/builder sample-java-mvn
 docker run -it -ePORT=8080 -p8080:8080 sample-java-mvn
 ```
 
