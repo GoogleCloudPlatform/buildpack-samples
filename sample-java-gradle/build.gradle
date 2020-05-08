@@ -1,0 +1,17 @@
+plugins {
+    id "application"
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+application {
+    mainClassName = "com.google.WebApp"
+}
