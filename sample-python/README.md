@@ -23,6 +23,12 @@ FLASK_APP=web.py flask run
 
 Check it out: http://127.0.0.1:5000/
 
+Run Locally with Buildpacks & Docker:
+```
+pack build sample-python
+docker run -it -ePORT=8080 -p8080:8080 sample-python
+```
+
 Run on Cloud Run:
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?cloudshell_context=cloudrun-gbp)
