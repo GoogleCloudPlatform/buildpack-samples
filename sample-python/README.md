@@ -1,8 +1,6 @@
 Sample Python
 -------------
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
-
 Setup Local Python Environment:
 
 (If the Python install fails, see: https://github.com/pyenv/pyenv/wiki/Common-build-problems)
@@ -25,3 +23,6 @@ FLASK_APP=web.py flask run
 
 Check it out: http://127.0.0.1:5000/
 
+Run on Cloud Run:
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?cloudshell_context=cloudrun-gbp)
