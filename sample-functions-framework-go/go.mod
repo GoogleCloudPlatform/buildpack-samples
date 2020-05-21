@@ -1,4 +1,4 @@
-module github.com/GoogleCloudPlatform/buildpack-samples/sample-functions-framework-go
+module example.com/hello
 
 go 1.14
 

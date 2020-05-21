@@ -3,8 +3,7 @@ Sample Functions Framework Go
 
 Run Locally with Go installed:
 ```
-go build
-./sample-functions-framework-go
+go run cmd/main.go
 ```
 
 Run Locally with pack & Docker:
