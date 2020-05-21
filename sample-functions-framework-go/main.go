@@ -6,7 +6,7 @@ import (
 
 	"github.com/GoogleCloudPlatform/functions-framework-go/funcframework"
 )
-￼
+
 func main() {
 	funcframework.RegisterHTTPFunction("/", HelloWorld)
 	// Use PORT environment variable, or default to 8080.
