@@ -9,4 +9,5 @@ Buildpack Samples
 | [sample-java-mvn](sample-java-mvn) | Java | Maven | [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/GoogleCloudPlatform/buildpack-samples.git&dir=sample-java-mvn&cloudshell_context=cloudrun-gbp) |
 | [sample-node](sample-node) | JavaScript (Node.js) | npm | [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/GoogleCloudPlatform/buildpack-samples.git&dir=sample-node&cloudshell_context=cloudrun-gbp) |
 | [sample-python](sample-python) | Python | pip | [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/GoogleCloudPlatform/buildpack-samples.git&dir=sample-python&cloudshell_context=cloudrun-gbp) |
+| [sample-functions-framework-node](sample-functions-framework-node) | JavaScript (Node.js) Functions Framework | npm | [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/GoogleCloudPlatform/buildpack-samples.git&dir=sample-functions-framework-node&cloudshell_context=cloudrun-gbp) |
 
