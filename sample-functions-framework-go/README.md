@@ -1,6 +1,12 @@
 Sample Functions Framework Go
 -----------------------------
 
+Run Locally with Go installed:
+```
+go build
+./sample-functions-framework-go
+```
+
 Run Locally with pack & Docker:
 ```
 pack build --builder=gcr.io/buildpacks/builder sample-functions-framework-go
