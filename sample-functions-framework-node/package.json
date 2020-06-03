@@ -1,0 +1,7 @@
+{
+  "name": "sample-buildpack-functions-framework-node",
+  "version": "1.0.0",
+  "description": "Sample Buildpack with Functions Framework Node.js",
+  "main": "index.js",
+  "license": "Apache-2.0"
+}
