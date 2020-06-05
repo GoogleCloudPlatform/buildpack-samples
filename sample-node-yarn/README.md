@@ -3,6 +3,7 @@ Sample Node
 
 Run Locally:
 1. [Install Node](https://nodejs.org/en/download/)
+1. [Install yarn](https://classic.yarnpkg.com/en/docs/install/)
 1. Install Node modules
     ```
     yarn install
