@@ -22,5 +22,5 @@ docker run -it -ePORT=8080 -p8080:8080 sample-node-yarn
 
 Run on Cloud Run:
 
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?cloudshell_context=cloudrun-gbp)
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
 
