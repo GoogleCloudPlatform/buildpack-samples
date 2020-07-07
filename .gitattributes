@@ -1,0 +1,6 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# mvnw and gradlew are shell scripts. Unix tools expect lf.
+mvnw text eol=lf
+gradlew text eol=lf
