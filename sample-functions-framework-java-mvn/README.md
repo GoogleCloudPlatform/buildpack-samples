@@ -1,9 +1,9 @@
 Sample Functions Framework Java and Maven
 -----------------------------------------
 
-Run Locally (using [Java](https://java.com/en/download/help/download_options.xml) and [Maven](http://maven.apache.org/install.html)):
+Run Locally (with Java 11 installed):
 ```
-mvn function:run
+./mvnw function:run
 ```
 
 Run Locally with Buildpacks & Docker:
