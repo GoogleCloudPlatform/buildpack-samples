@@ -1,0 +1,3 @@
+[[build.env]]
+name = "NODE_ENV"
+value = "development"
