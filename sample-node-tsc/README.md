@@ -11,7 +11,7 @@ Run Locally:
     ```
     npm run dev
     ```
-1. Check it out: [http://localhost:3000](http://localhost:3000)
+1. Check it out: [http://localhost:8080](http://localhost:8080)
 
 Run Locally with Buildpacks & Docker:
 ```
