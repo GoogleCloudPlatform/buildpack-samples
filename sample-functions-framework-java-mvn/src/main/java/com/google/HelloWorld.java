@@ -20,11 +20,11 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 
 public class HelloWorld implements HttpFunction {
-  // Simple function to return "Hello World"
+  // Simple function to return "hello, world"
   @Override
   public void service(HttpRequest request, HttpResponse response)
       throws IOException {
     BufferedWriter writer = response.getWriter();
-    writer.write("Hello World!");
+    writer.write("hello, world");
   }
 }
