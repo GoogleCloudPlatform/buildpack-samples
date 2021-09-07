@@ -1,0 +1,9 @@
+{
+    "name": "sample-functions-framework-cpp",
+    "version-string": "unversioned",
+    "homepage": "https://github.com/GoogleCloudPlatform/buildpack-samples/",
+    "description": "Functions Framwork for C++",
+    "dependencies": [
+      "functions-framework-cpp"
+    ]
+  }
