@@ -21,5 +21,5 @@ using ::google::cloud::functions::HttpResponse;
 HttpResponse HelloWorld(HttpRequest) {  // NOLINT
   return HttpResponse{}
       .set_header("Content-Type", "text/plain")
-      .set_payload("Hello World\n");
+      .set_payload("hello, world\n");
 }
