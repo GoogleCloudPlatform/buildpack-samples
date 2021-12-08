@@ -18,10 +18,10 @@ pip install -r requirements.txt
 
 Run the server locally:
 ```
-FLASK_APP=web.py flask run
+python main.py
 ```
 
-Check it out: http://127.0.0.1:5000/
+Check it out: http://localhost:8080
 
 Run Locally with Buildpacks & Docker:
 ```
