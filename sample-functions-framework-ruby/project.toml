@@ -1,0 +1,7 @@
+[[build.env]]
+name = "GOOGLE_USE_EXPERIMENTAL_RUBY_RUNTIME"
+value = "true"
+
+[[build.env]]
+name = "GOOGLE_ENTRYPOINT"
+value = "bundle exec functions-framework-ruby --source=app.rb --target=hello"
