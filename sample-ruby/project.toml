@@ -1,0 +1,3 @@
+[[build.env]]
+name = "GOOGLE_USE_EXPERIMENTAL_RUBY_RUNTIME"
+value = "true"
