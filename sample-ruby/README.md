@@ -18,8 +18,8 @@ Run Locally:
 
 Run Locally with Buildpacks & Docker:
 ```
-pack build --builder=gcr.io/buildpacks/builder ruby
-docker run -it -ePORT=8080 -p8080:8080 ruby
+pack build --builder=gcr.io/buildpacks/builder sample-ruby
+docker run -it -ePORT=8080 -p8080:8080 sample-ruby
 ```
 
 Run on Cloud Run:
