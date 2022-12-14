@@ -17,6 +17,6 @@
     "start": "node dist/web.js"
   },
   "engines": {
-    "node": "15.14.0"
+    "node": "16.18.1"
   }
 }
