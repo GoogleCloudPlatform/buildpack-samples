@@ -1,5 +1,6 @@
 module example.com/hello
 
-go 1.14
+// minimum version 
+go 1.19
 
-require github.com/GoogleCloudPlatform/functions-framework-go v1.0.1
+require github.com/GoogleCloudPlatform/functions-framework-go v1.6.1
