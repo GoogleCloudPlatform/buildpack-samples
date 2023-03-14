@@ -1,7 +1,7 @@
 Sample Java Gradle
 ------------------
 
-Run Locally (with Java 11 installed):
+Run Locally (with Java installed):
 ```
 ./gradlew run
 ```
