@@ -1,0 +1,16 @@
+{
+  "name": "sample-node-pnpm",
+  "version": "1.0.0",
+  "description": "A Node.js app using express and pnpm.",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x.x",
+    "pnpm": "8.6.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

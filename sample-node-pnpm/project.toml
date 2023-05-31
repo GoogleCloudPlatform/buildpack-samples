@@ -1,0 +1,3 @@
+[build]
+builder = "gcr.io/buildpacks/builder:google-22"
+
