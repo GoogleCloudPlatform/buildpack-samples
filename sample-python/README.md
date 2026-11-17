@@ -1,34 +1,46 @@
 Sample Python
 -------------
 
-Setup Local Python Environment:
+Run all commands from this `sample-python` directory:
 
-(If the Python install fails, see: https://github.com/pyenv/pyenv/wiki/Common-build-problems)
-
+```sh
+cd sample-python
 ```
-git clone https://github.com/pyenv/pyenv.git .pyenv
-export PYENV_ROOT=.pyenv
-.pyenv/bin/pyenv install
-eval "$(.pyenv/bin/pyenv init --path)"
-python -m venv venv
+
+### Run locally with Python
+
+```sh
+python3 -m venv venv
 source venv/bin/activate
-pip install -U pip
 pip install -r requirements.txt
-```
-
-Run the server locally:
-```
 python main.py
 ```
 
-Check it out: http://localhost:8080
+Open http://localhost:8080 in your browser.
 
-Run Locally with Buildpacks & Docker:
+### Build and run locally with Buildpacks
+
+Install [Docker](https://docs.docker.com/get-docker/) and the [`pack` CLI](https://buildpacks.io/docs/tools/pack/), then build and run the container image:
+
+```sh
+pack config trusted-builders add gcr.io/buildpacks/builder:google-24
+pack build --builder=gcr.io/buildpacks/builder:google-24 --path . sample-python
+docker run --rm -e PORT=8080 -p 8080:8080 sample-python
 ```
-pack build --builder=gcr.io/buildpacks/builder sample-python
-docker run -it -ePORT=8080 -p8080:8080 sample-python
+
+> **Note:** On Apple Silicon (`arm64`) Macs, pass `--platform linux/amd64` to `pack build`, or build remotely using Cloud Run below.
+
+### Deploy from source on Cloud Run
+
+Ensure your Google Cloud project meets the [Cloud Run source deployment prerequisites](https://cloud.google.com/run/docs/deploying-source-code), then deploy with authenticated access and test via the local proxy:
+
+```sh
+gcloud run deploy sample-python \
+  --source . \
+  --region=us-central1 \
+  --no-allow-unauthenticated
+
+gcloud run services proxy sample-python --region=us-central1
 ```
 
-Run on Cloud Run:
-
-[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run?git_repo=https://github.com/GoogleCloudPlatform/buildpack-samples.git&dir=sample-python)
