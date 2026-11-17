@@ -1,0 +1,15 @@
+[_]
+schema-version = "0.2"
+
+[io.buildpacks]
+builder = "gcr.io/buildpacks/builder:google-24"
+exclude = [
+    "README.md",
+    ".git",
+    "venv",
+    "__pycache__",
+]
+
+[[io.buildpacks.build.env]]
+name = "GOOGLE_RUNTIME_VERSION"
+value = "3.13"
